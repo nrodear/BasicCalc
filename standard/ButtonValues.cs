@@ -1,7 +1,7 @@
 ﻿using CalcLib.Engine;
 using CalcLib.Types;
 
-namespace BasicCalc.Standard
+namespace BasicCalc.standard
 {
     public class ButtonValues : IButtonValues
     {

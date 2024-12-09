@@ -2,7 +2,7 @@
 using CalcLib.Engine;
 using CalcLib.Types;
 
-namespace BasicCalc.Standard
+namespace BasicCalc.standard
 {
     internal class Methods
     {
@@ -13,7 +13,7 @@ namespace BasicCalc.Standard
             [CalcType(CalcType.None)]
             [LevelType(LevelType.None)]
             [ArgsType(ArgsType.None)]
-            float SimpleBase(float[] f)
+            static float SimpleBase(float[] f)
             {
                 Values.Clear();
                 Elements.Clear();
@@ -28,7 +28,7 @@ namespace BasicCalc.Standard
             [CalcType(CalcType.None)]
             [LevelType(LevelType.None)]
             [ArgsType(ArgsType.None)]
-            float SimpleBase(float[] f)
+            static float SimpleBase(float[] f)
             {
                 Values.Process();
                 Values.Clear();
@@ -43,7 +43,7 @@ namespace BasicCalc.Standard
             [CalcType(CalcType.Func)]
             [LevelType(LevelType.Two)]
             [ArgsType(ArgsType.Two)]
-            float SimpleBase(float[] f)
+            static float SimpleBase(float[] f)
             {
                 ValidateArgs(f, ArgsType.Two);
                 return f[0] + f[1];
@@ -57,14 +57,14 @@ namespace BasicCalc.Standard
             [CalcType(CalcType.Func)]
             [LevelType(LevelType.Two)]
             [ArgsType(ArgsType.Two)]
-            float SimpleBase(float[] f)
+            static float SimpleBase(float[] f)
             {
                 ValidateArgs(f, ArgsType.Two);
                 return f[0] - f[1];
             }
         }
-        
-        private static void ValidateArgs(float[] f, ArgsType  argType)
+
+        private static void ValidateArgs(float[] f, ArgsType argType)
         {
             if (f != null && f.Length != (int)argType)
             {

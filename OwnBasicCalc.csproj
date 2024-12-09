@@ -22,6 +22,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <LangVersion>9</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -48,13 +49,13 @@
     <Compile Include="standard\Methods.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\CalcLib.csproj">
+    <Content Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CalcLib\CalcLib.csproj">
       <Project>{916D9A97-FAED-4794-B86B-F3DFDC3BDF3A}</Project>
       <Name>CalcLib</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
