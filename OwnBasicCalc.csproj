@@ -52,9 +52,9 @@
     <Content Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CalcLib\CalcLib.csproj">
+    <ProjectReference Include="..\LibCalc\LibCalc.csproj">
       <Project>{916D9A97-FAED-4794-B86B-F3DFDC3BDF3A}</Project>
-      <Name>CalcLib</Name>
+      <Name>LibCalc</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

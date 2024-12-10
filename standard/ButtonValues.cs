@@ -1,5 +1,6 @@
-﻿using CalcLib.Engine;
-using CalcLib.Types;
+﻿
+using LibCalc.Engine;
+using LibCalc.Types;
 
 namespace BasicCalc.standard
 {
@@ -16,7 +17,6 @@ namespace BasicCalc.standard
 
             Item Add = Item.CreateItem("+", Methods.Add());
             Item Minus = Item.CreateItem("-", Methods.Minus());
-
 
             Item Num0 = Item.CreateItem("0", 0);
             Item Num1 = Item.CreateItem("1", 1);
